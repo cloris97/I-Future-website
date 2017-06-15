@@ -1,0 +1,90 @@
+ :root {
+ 	--lightGreen: #E2F8F7;
+ 	--logoGreen: #48c1bc;
+ 	--offWhite: #fdfdfd;
+ 	--lightGrey: #949494;
+ 	--darkGrey: #404040;
+ }
+ html {
+ 	box-sizing: border-box;
+ }
+
+ body {
+ 	background: url("../img/city.jpg") no-repeat center center fixed;
+ 	background-size: cover;
+ 	font-family: "Microsoft YaHei", "helvetica", sans-serif;
+ 	color: var(--offWhite);
+ }
+
+  /**********************************
+  NAVIGATION
+  ***********************************/
+  a, a:hover, a:link {
+  	text-decoration: none;
+  	color: var(--logoGreen);
+  }
+
+  a:hover {
+  	color: var(--lightGreen);
+  }
+
+  #logo {
+  	margin: 1% 0 0 4%;
+  }
+
+  nav ul {
+  	float: right;
+  	margin: 1.5% 4% 0 0;
+  	list-style: none;
+  	padding:  0;
+  }
+
+  nav ul li{
+  	display: inline-block;
+  	font-size: 22px;
+  	width: 90px;
+  }
+
+  nav li a {
+  	padding-left: 1%;
+  	font-weight: bold;
+  }
+
+  .selected {
+  	border-bottom: 3px solid var(--logoGreen);
+  }
+
+
+  /**********************************
+  BODY
+  ***********************************/
+  section p {
+  	margin-top: 12%;
+  	font-size: 18px;
+    line-height: 2;
+    text-align: center;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  #location {
+    height: 1.5em;
+    background: url('../img/location.svg') no-repeat left;
+    background-size: contain;
+    padding-left: 30px;
+    color: var(--logoGreen);
+  }
+  #email {
+    height: 1.5em;
+    background: url('../img/email.svg') no-repeat left;
+    background-size: contain;
+    padding-left: 32px;
+    margin-left: 2em;
+    color: var(--logoGreen);
+  }
