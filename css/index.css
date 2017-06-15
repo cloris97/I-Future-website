@@ -57,11 +57,11 @@ nav li a {
   h1, h2, h3{
 	font-weight: normal;
   }
-  #intro h1 {
+  h1 {
   	font-size: 48px;
   	margin: 16% 0 0 4%;
   }
-  #intro h2 {
+  h2 {
   	font-size: 20px;
   	margin: 1% 0 0 4%;
   }
