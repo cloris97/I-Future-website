@@ -59,8 +59,9 @@
   BODY
   ***********************************/
   section p {
-  	margin-top: 12%;
-  	font-size: 18px;
+    max-width: 60vw;
+    margin: 12% auto;
+    font-size: 18px;
     line-height: 2;
     text-align: center;
   }
@@ -81,10 +82,103 @@
     color: var(--logoGreen);
   }
   #email {
-    height: 1.5em;
     background: url('../img/email.svg') no-repeat left;
     background-size: contain;
     padding-left: 32px;
     margin-left: 2em;
     color: var(--logoGreen);
+  }
+
+  /**********************************
+  MQ
+  ***********************************/
+  @media only screen and (max-width: 1000px){
+    section p {
+      margin-top: 20%;
+      font-size: 1rem;
+      max-width: 70vw;
+    }
+  } 
+
+  @media only screen and (max-width: 700px) {
+    p{
+      font-size: 0.8rem;
+    }
+    section p {
+      margin-top: 15%;
+      font-size: 0.9rem;
+      max-width: 80vw;
+    }
+    #email {
+      margin-left: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    footer{
+      width: 90vw;
+      margin-left: 3%;
+    }
+    footer p {
+      font-size: 0.7rem;
+    }
+    #location, #email {
+      padding-left: 20px;
+    }
+    nav ul li {
+      font-size: 1rem;
+    }
+    #logo {
+      height: 35px;
+      width: auto;
+      margin: 2% 0 0 4%;
+    }
+    nav ul {
+      margin-top: 3%;
+    }
+    nav ul li {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    section p {
+      margin-top: 25%;
+      max-width: 90vw;
+    }
+    footer {
+      flex-wrap: wrap;
+    }
+    #location, #email {
+      margin: 0 auto 1%;
+    }
+  }
+
+
+  @media only screen and (max-width: 425px) {
+
+    nav ul{
+      margin-top: 4%;
+      margin-right: 8%;
+    }
+    nav ul li {
+      width: 65px;
+      font-size: 16px;
+    }
+    footer {
+      bottom: 1%;
+    }
+    footer p {
+      font-size: 0.6rem;
+    }
+    section p {
+      margin-top: 35%;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media only screen and (max-width: 332px)  {
+    footer p {
+      font-size: 0.4rem;
+    }
   }

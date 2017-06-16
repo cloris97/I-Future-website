@@ -5,57 +5,60 @@
  	--lightGrey: #949494;
  	--darkGrey: #404040;
  }
-html {
-	box-sizing: border-box;
-}
+ html {
+ 	box-sizing: border-box;
+ }
 
-body {
-	background: url("../img/landing.jpg") no-repeat center center fixed;
-	background-size: cover;
-	font-family: "Microsoft YaHei", "helvetica", sans-serif;
-	color: var(--offWhite);
-}
+ body {
+ 	background: url("../img/landing.jpg") no-repeat center center fixed;
+ 	background-size: cover;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	font-family: "Microsoft YaHei", "helvetica", sans-serif;
+ 	color: var(--offWhite);
+ }
 
   /**********************************
   NAVIGATION
   ***********************************/
-a, a:hover, a:link {
-	text-decoration: none;
-	color: var(--logoGreen);
-}
+  a, a:hover, a:link {
+  	text-decoration: none;
+  	color: var(--logoGreen);
+  }
 
-a:hover {
-	color: var(--lightGreen);
-}
+  a:hover {
+  	color: var(--lightGreen);
+  }
 
-#logo {
-	margin: 1% 0 0 4%;
-}
+  #logo {
+  	margin: 1% 0 0 4%;
+  }
 
-nav ul {
-	float: right;
-	margin: 1.5% 4% 0 0;
-	list-style: none;
-	padding:  0;
-}
+  nav ul {
+  	float: right;
+  	margin: 1.5% 4% 0 0;
+  	list-style: none;
+  	padding: 0;
+  }
 
-nav ul li{
-	display: inline-block;
-	font-size: 22px;
-	width: 90px;
-}
+  nav ul li{
+  	display: inline-block;
+  	font-size: 22px;
+  	width: 90px;
+  }
 
-nav li a {
-	padding-left: 1%;
-	font-weight: bold;
-}
+  nav li a {
+  	padding-left: 1%;
+  	font-weight: bold;
+  }
 
 
   /**********************************
   BODY
   ***********************************/
   h1, h2, h3{
-	font-weight: normal;
+  	font-weight: normal;
   }
   h1 {
   	font-size: 48px;
@@ -64,4 +67,64 @@ nav li a {
   h2 {
   	font-size: 20px;
   	margin: 1% 0 0 4%;
+  	line-height: 1.5;
+  	width: 55vw;
+  }
+
+  /**********************************
+  MQ
+  ***********************************/
+  @media only screen and (max-width: 950px) {
+  	h1 {
+  		font-size: 36px;
+  	}
+  	h2 {
+  		font-size: 16px;
+  	}
+  }
+
+  @media only screen and (max-width: 750px) {
+  	h1 {
+  		font-size: 32px;
+  		margin-top: 20%;
+  	}
+  }
+
+  @media only screen and (max-width: 600px) {
+  	h1 {
+  		font-size: 28px;
+  		margin-top: 40%;
+  	}
+  	h2 {
+  		margin-top: 1.5%;
+  		width: 90vw;
+  	}
+    #logo {
+      height: 35px;
+      width: auto;
+      margin: 2% 0 0 4%;
+    }
+    nav ul {
+      margin-top: 3%;
+    }
+    nav ul li {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+  	h1 {
+  		margin-top: 55%;
+  	}
+  	h2 {
+  		width: 90%;
+  	}
+  	nav ul{
+  		margin-top: 4%;
+  		margin-right: 8%;
+  	}
+  	nav ul li {
+  		width: 65px;
+  		font-size: 16px;
+  	}
   }
