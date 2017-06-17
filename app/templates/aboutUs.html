@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- site info -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}"
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aboutUs.css') }}">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="{{ url_for('index')}}"><img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" width=auto height="50" alt="I-Future Logo"/></a>
+			<ul>
+				<li><a href="{{ url_for('product')}}">产品</a></li>
+				<li><a href="{{ url_for('about_us')}}" class="selected">关于我们</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<p>数景未来科技（贵州）有限公司是加拿大 I-FUTURE DATA TECHNOLOGY 全资子公司，
+			由北美顶尖大数据专家和科技精英强强联手，核心团队来自黑莓公司。数景未来拥有国际先进的技术和一流的管理及运营团队，行业经验丰富，拥有超过 10 年的大数据经验和数年的人工智能、区块链等技术储备。从 2016 年开始，公司把战略发展重点放到了中国，将主要致力于中国市场大数据人才培训、大数据应用及区块链应用产品化/定制化，以及项目咨询和实施。</p>
+	</section>
+	<footer>
+		<p id="location">贵州省贵阳市高新技术产业开发区长岭南路160号高科一号A栋6楼</p>
+		<p id="email"> info.ifuture.ai</p>
+	</footer>
+	</body>
+	</html>
